@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main() {
+    float distance, fare = 100;
+    int member;
+
+    printf("Enter distance: ");
+    scanf("%f", &distance);
+
+    printf("Are you a member? (1 for Yes, 0 for No): ");
+    scanf("%d", &member);
+
+    if (distance > 10) {
+        fare = fare + (distance - 10) * 20;
+    }
+
+    if (member == 1) {
+        fare = fare - (fare * 0.10);
+    }
+
+    printf("Final Fare: %.2f\n", fare);
+
+    return 0;
+}

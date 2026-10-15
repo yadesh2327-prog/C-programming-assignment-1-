@@ -1,0 +1,28 @@
+
+#include <stdio.h>
+
+int main() {
+    int treasure, x, y;
+    int longBen, blackbeard;
+    int remaining, eachPirate;
+
+    scanf("%d", &treasure);
+    scanf("%d", &x);
+    scanf("%d", &y);
+
+    longBen = (treasure * x) / 100;
+
+    remaining = treasure - longBen;
+
+    blackbeard = (remaining * y) / 100;
+
+    remaining = remaining - blackbeard;
+
+    eachPirate = remaining / 3;
+
+    printf("%d\n", longBen);
+    printf("%d\n", blackbeard);
+    printf("%d\n", eachPirate);
+
+    return 0;
+}

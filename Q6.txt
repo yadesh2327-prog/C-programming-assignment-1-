@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main() {
+    int A, B, C, cars;
+
+    scanf("%d", &A);
+    scanf("%d", &B);
+    scanf("%d", &C);
+    scanf("%d", &cars);
+
+    if (cars != 0 && A % cars == 0) {
+        printf("Car 1 goes into road A\n");
+    } else if (cars != 0 && B % cars == 0) {
+        printf("Car 1 goes into road B\n");
+    } else if (cars != 0 && C % cars == 0) {
+        printf("Car 1 goes into road C\n");
+    } else {
+        printf("No path exists\n");
+    }
+
+    return 0;
+}
